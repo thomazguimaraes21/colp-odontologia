@@ -1,0 +1,89 @@
+/**
+ * Design tokens — Colp Odontologia Especializada
+ * Paleta fiel à identidade visual real (logo enviado pelo cliente + paleta
+ * "Olive Garden Feast" do Coolors que bate com o logo): verde-oliva escuro
+ * como cor de identidade, oliva claro como secundária, creme como base,
+ * dourado e terracota como acentos controlados.
+ * Tipografia Fraunces (serifada, quente, com personalidade) + Work Sans
+ * (legível, neutra) — combinação distinta de outros sites do portfólio.
+ */
+
+:root {
+  /* Base — creme, como o fundo do logo */
+  --paper-050: #fefae0;
+  --paper-100: #ffffff;
+  --paper-200: #f7f0d6;
+  --paper-300: #ede0bd;
+
+  /* Verde-oliva — identidade principal (do logo) */
+  --ink-900: #283618;
+  --ink-700: #3f4e2b;
+  --ink-500: #586b45;
+  --ink-on-dark: #fefae0;
+
+  /* Oliva claro — secundária */
+  --accent-500: #606c38;
+  --accent-600: #4b5529;
+  --accent-tint: #eef0e0;
+
+  /* Dourado e terracota — acentos controlados */
+  --gold-500: #dda15e;
+  --rust-600: #bc6c25;
+
+  /* Tipografia */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.8125rem;
+  --fs-h1: clamp(2.25rem, 4.5vw + 1rem, 3.75rem);
+  --fs-h2: clamp(1.75rem, 3vw + 1rem, 2.5rem);
+  --fs-h3: clamp(1.25rem, 1.5vw + 1rem, 1.5rem);
+  --fs-lead: clamp(1.0625rem, 1vw + 0.9rem, 1.25rem);
+
+  --lh-body: 1.65;
+  --lh-heading: 1.15;
+
+  /* Espaçamento — escala 4px */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --container-max: 74rem;
+  --container-pad: var(--space-4);
+
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --border-hairline: 1px solid rgba(40, 54, 24, 0.14);
+  --border-hairline-strong: 1px solid rgba(40, 54, 24, 0.24);
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 180ms;
+  --duration-base: 280ms;
+
+  --touch-target: 44px;
+
+  --z-header: 50;
+  --z-overlay: 60;
+  --z-mobilebar: 40;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --container-pad: var(--space-6);
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --container-pad: var(--space-7);
+  }
+}
